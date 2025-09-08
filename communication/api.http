@@ -1,0 +1,40 @@
+
+
+GET http://127.0.0.1:8000/products/ HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8000/products/ HTTP/1.1
+Host: 127.0.0.1:8000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2ODkzMzU1LCJpYXQiOjE3NTY4OTMwNTUsImp0aSI6ImM0NjE5NDIwYmM4NjQwMGViZmVjMzc4YzU5Y2ViYzA5IiwidXNlcl9pZCI6IjIifQ.99QqtTXbWCDYMdQABEJnl3XiQTRAUiITwy1sonvhtzg
+
+{
+    "name": "television",
+    "price": "8000.00",
+    "stock": "15"
+}
+
+###
+
+DELETE http://127.0.0.1:8000/products/destroy/6/ HTTP/1.1
+Host: 127.0.0.1:8000
+
+###
+
+POST http://127.0.0.1:8000/api/token/ HTTP/1.1
+Host: 127.0.0.1:8000
+Content-Type: application/json
+
+{
+    "username":"keyur5",
+    "password": "52526363"
+}
+
+###
+
+GET http://127.0.0.1:8000/api/token/refresh/ HTTP/1.1
+
+###
+
+GET http://127.0.0.1:8000/user-orders/ HTTP/1.1
